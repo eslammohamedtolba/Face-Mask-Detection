@@ -6,6 +6,9 @@
 !chmod 600 ~/.kaggle/kaggle.json
 # API to fetch the dataset from Kaggle
 !kaggle datasets download -d omkargurav/face-mask-dataset
+# unzip the zip folder of images
+! unzip '/content/face-mask-dataset.zip'
+
 
 import numpy as np
 import matplotlib.pyplot as plt
