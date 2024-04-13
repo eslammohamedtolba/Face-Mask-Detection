@@ -41,6 +41,11 @@ Before running the code, make sure you have the following dependencies installed
 ## Model Accuracy
 The model achieves an accuracy of 95% on the test data.
 
+## Flask App Structure
+- app.py: Contains Flask routes for rendering the web interface and handling predictions.
+- templates/: Directory with HTML templates for the web pages.
+- static/: Directory for static files as CSS.
+
 ## Contribution
 Contributions to this project are welcome. You can help improve the model's accuracy, explore different CNN architectures, or enhance the data preprocessing and visualization steps. 
 Feel free to make any contributions and submit pull requests.

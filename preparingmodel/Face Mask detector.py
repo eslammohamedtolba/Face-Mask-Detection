@@ -13,9 +13,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import random
-import os
-import cv2
 from sklearn.model_selection import train_test_split
 # import required dependencies for model creation
 from tensorflow.keras import Sequential
@@ -23,6 +20,9 @@ from tensorflow.keras.layers import Input,Conv2D,MaxPooling2D,Flatten,Dense
 # import confusion matrix
 from tensorflow.math import confusion_matrix
 from tensorflow.keras.models import save_model
+import random
+import os
+import cv2
 
 
 directory = '/kaggle/input/face-mask-dataset/data'
@@ -147,7 +147,6 @@ sns.heatmap(conf_matrix,square=True,cbar=True,annot=True,annot_kws={'size':8},cm
 
 
 
-
 # Make a predictive system 
 image_path = input("Enter the image path: ")
 image = cv2.imread(image_path)
@@ -167,4 +166,4 @@ print(predicted_class)
 
 
 # Save the model
-
+save_model(Model, 'Model.h5')
