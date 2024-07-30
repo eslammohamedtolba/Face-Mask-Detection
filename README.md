@@ -1,5 +1,6 @@
 # Face-Mask-Detection
 This is a Face Mask Detection model that uses a convolutional neural network (CNN) to classify images into two categories: "with_mask" and "without_mask". 
+
 ![Image about the final project](<Face Mask Detection.png>)
 
 ## Prerequisites
